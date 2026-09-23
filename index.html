@@ -925,7 +925,7 @@
           </article>
         </div>
         <div class="faculty-cta">
-          <a class="btn btn-blue" id="btnTelusuriDosen" href="#header-search">TELUSURI DOSEN DI EXPERT UNS ↗</a>
+          <a class="btn btn-blue" id="btnTelusuriDosen" href="https://expert.uns.ac.id/researchers?fakultas%5B%5D=0106" target="_blank" rel="noopener">TELUSURI DOSEN DI EXPERT UNS ↗</a>
         </div>
       </div>
     </section>
@@ -1230,19 +1230,6 @@
       });
     }
 
-    // Direct Smooth Scroll & Highlight to Header Search Field
-    const btnTelusuri = document.getElementById('btnTelusuriDosen');
-    const headerSearchEl = document.getElementById('header-search');
-    if (btnTelusuri && headerSearchEl) {
-      btnTelusuri.addEventListener('click', (e) => {
-        e.preventDefault();
-        headerSearchEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        headerSearchEl.classList.add('search-highlight');
-        setTimeout(() => {
-          headerSearchEl.classList.remove('search-highlight');
-        }, 2200);
-      });
-    }
   </script>
 </body>
 </html>
